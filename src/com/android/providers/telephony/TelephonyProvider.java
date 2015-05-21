@@ -435,7 +435,7 @@ public class TelephonyProvider extends ContentProvider
                     }
                 }
 
-                 try {
+                try {
                     // Add ppp_number field if it's missing
                     db.execSQL("ALTER TABLE " + CARRIERS_TABLE +
                             " ADD COLUMN ppp_number TEXT DEFAULT '';");
